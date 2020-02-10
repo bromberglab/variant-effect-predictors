@@ -3,13 +3,13 @@ Last updated: 02/10/20 [#45]
 
 | Tool         | Year         | Model        | Features     | Scope        | Predicts     | Impacts      | Training     | Availability |
 | :---         | :---         | :---         | :---         | :---         | :---         | :---         | :---         | :---         |
-| ENVISION | 2018 | Stochastic Gradient Boosting  | SEQ,STR | nsSNP | F | protein | DMS[3] [21,026 variants in eight proteins] | https://envision.gs.washington.edu/shiny/envision_new |
+| ENVISION | 2018 | Stochastic Gradient Boosting  | SEQ,STR | nsSNP | F | protein | DMS[3] [21,026 variants in eight proteins] | https://envision.gs.washington.edu/shiny/envision_new/ |
 | MutPred2 | 2017 | Neural Networks (FF[1]) | SEQ | nsSNP | P* | protein | HGMD + SwissVar + dbSNP + inter-species pairwise alignments [53,180 pathogenic / 206,946 unlabeled (putatively neutral) variants] | http://mutpred.mutdb.org |
 | REVEL | 2016 | RandomForest  | ENS | nsSNP | P | protein | HGMD + ESP + ARIC + dbNSFP [6,182 disease-related variants / 123,706 rare neutral exome sequencing variants] | https://sites.google.com/site/revelgenomics |
 | PANTHER-PSEP | 2016 | Phylogenetic Analysis | SEQ | nsSNP | P | protein | HumVar (cite: doi:10.1093/bioinformatics/btl423) | http://pantherdb.org/tools/csnpScoreForm.jsp |
 | SNAP2 | 2015 | Neural Networks (FF[1]) | SEQ | nsSNP | F | protein | PMD + Swiss-Prot + OMIM + HumVar [61,037 effect and 40,478 neutral in 9,744 proteins] | https://rostlab.org/services/snap2web |
 | PON-P2 | 2015 | RandomForest  | SEQ,STR | nsSNP | P | protein | dbSNP, VariBench [14,086 pathogenic variants in 1,082 proteins / 14,848 neutral variants in 6,598 proteins] | http://structure.bmc.lu.se/PON-P2 |
-| wKinMut-2 | 2015 | Annotation Summary | ENS,LIT,KB | nsSNP | P | protein | UniProt/Swiss-Prot [disease dataset: 865 mutations in 65 proteins / neutral dataset: 2,627 mutations in 447 human proteins) | https://github.com/Rbbt‐Workflows/KinMut2 |
+| wKinMut-2 | 2015 | Annotation Summary | ENS,LIT,KB | nsSNP | P | protein | UniProt/Swiss-Prot [disease dataset: 865 mutations in 65 proteins / neutral dataset: 2,627 mutations in 447 human proteins) | https://github.com/Rbbt-Workflows/kin_mut2 |
 | PredictSNP | 2014 | Consensus Scoring | ENS | nsSNP | F | protein | Swiss-Prot [SNPs&GO dataset; 58,057 mutations], Swiss-Prot + HGMD [MutPred dataset, 65,654 mutations], dbSNP + PhenCode + Idbases + 16 individual locus- specific databases [PON-P datase, 39,670 mutations], Humsavar [36,994 neutral and disease-related mutations] | http://loschmidt.chemi.muni.cz/predictsnp |
 | FATHMM-DS | 2014 | Hidden Markov Models  | SEQ | nsSNP | F | protein | HGMD [damaging mutations], Swiss-Prot/TrEMBL [putative neutral polymorphisms] | http://fathmm.biocompute.org.uk/disease.html |
 | PolyPhen-2 | 2013 | Naïve Bayes Classifier | SEQ,STR | nsSNP | S,F | protein | HumDiv or HumVar [7,070 neutral and 5,322 deleterious variants] | http://genetics.bwh.harvard.edu/pph2 |
@@ -17,7 +17,7 @@ Last updated: 02/10/20 [#45]
 | VEST | 2013 | RandomForest  | SEQ | nsSNP | F | protein | PolyPhen-2 (v2.2.2) training set [HumDiv or HumVar] | http://www.cravat.us/CRAVAT |
 | FATHMM-cancer | 2013 | Hidden Markov Models  | SEQ | nsSNP | F | protein | CanProVar [12,720 positives], UniProt [36,928 negatives] | http://fathmm.biocompute.org.uk/cancer.html |
 | Meta-SNP | 2013 | RandomForest  | ENS | nsSNP | P | protein | SwissVar [SV-2009,  35,766 nsSNVs (17,883 disease variants) from 8,667 proteins] | http://snps.biofold.org/meta-snp |
-| PON-P | 2012 | RandomForest  | ENS | nsSNP | P | protein | PhenCode (2009) + IDbases + 16 individual locus- specific databases (LSDB) [14,610 pathogenic, manual curation, SwissVar/LSDB disease annotations], dbSNP [Build 131, 17,393 neutral] | http://bioinf.uta.fi/PON‐P |
+| PON-P | 2012 | RandomForest  | ENS | nsSNP | P | protein | PhenCode (2009) + IDbases + 16 individual locus- specific databases (LSDB) [14,610 pathogenic, manual curation, SwissVar/LSDB disease annotations], dbSNP [Build 131, 17,393 neutral] | https://www.ncbi.nlm.nih.gov/pubmed/22505138 |
 | KinMut | 2012 | Support Vector Machine | SEQ | nsSNP | P | protein | Swiss-Prot | http://kinmut.bioinfo.cnio.es |
 | MutationAssessor | 2011 | Functional Impact Scoring | SEQ,STR | nsSNP | F | protein | UniProt | http://mutationassessor.org/r3 |
 | MutPred | 2009 | RandomForest  | SEQ | nsSNP | S,F | protein | HGMD | http://mutpred1.mutdb.org/ |
@@ -36,7 +36,7 @@ Last updated: 02/10/20 [#45]
 | IDSV | 2019 | RandomForest  | SEQ | sSNP | D | protein | dbDSM (ClinVar, PubMed, Web of Knowledge variants as disease-causing [300 variants]) and VariSNP [300 neutral varians] | http://bioinfo.ahu.edu.cn:8080/IDSV |
 | ARVIN | 2018 | RandomForest  | SEQ,NET | SNV | P | regulatory | HGMD | https://github.com/gaolong/arvin |
 | LINSIGHT | 2017 | Linear + Probabilistic Model  | SEQ | SNV | P | regulatory | High-coverage genome sequences for 54 unrelated individuals from the "69 Genome" data set from Complete Genomics | http://compgen.cshl.edu/~yihuang/LINSIGHT |
-| DDIG-SN | 2017 | Support Vector Machine | SEQ | sSNP | P | protein | HGMD [592 disease-causing variants] and 1kGP [10,925 putatively benign variants] in 318 genes | http://sparks-lab.org/ddig |
+| DDIG-SN | 2017 | Support Vector Machine | SEQ | sSNP | P | protein | HGMD [592 disease-causing variants] and 1kGP [10,925 putatively benign variants] in 318 genes | https://sparks-lab.org/server/ddig |
 | regSNPs-splicing | 2017 | RandomForest  | SEQ | sSNP | F,SP | protein | HGMD [1373 disease-causing synonymous SNVs (sSNVs)] and 1000 Genomes Project [7231 neutral VIE variants,  329 VSS variants] | http://regsnps-splicing.ccbb.iupui.edu |
 | GWAVA | 2014 | RandomForest  | SEQ,KB | SNV | P | regulatory | HGMD [1,614 disease-implicated] and 1000 Genomes Project [5,027 variants] | https://www.sanger.ac.uk/science/tools/gwava |
 | SilVA | 2013 | RandomForest  | SEQ | sSNP | P | protein | Curated, literature based dataset of rare (allele frequency <5%) synonymous variants [33 variants] and 1000 Genomes Project [746 rare synonymous variants in one individual] | http://compbio.cs.toronto.edu/silva |
