@@ -13,14 +13,14 @@ Last updated: 02/11/20 [#45]
 | PredictSNP | 2014 | Consensus Scoring | ENS | nsSNP | F | protein | Swiss-Prot [SNPs&GO dataset; 58,057 mutations], Swiss-Prot + HGMD [MutPred dataset, 65,654 mutations], dbSNP + PhenCode + Idbases + 16 individual locus-specific databases (LSDB) [PON-P dataset, 39,670 mutations], Humsavar [36,994 neutral and disease-related mutations] | http://loschmidt.chemi.muni.cz/predictsnp |
 | FATHMM-DS | 2014 | Hidden Markov Models  | SEQ | nsSNP | F | protein | HGMD [damaging variants] and Swiss-Prot/TrEMBL [putative neutral polymorphisms] | http://fathmm.biocompute.org.uk/disease.html |
 | PolyPhen-2 | 2013 | Naïve Bayes Classifier | SEQ,STR | nsSNP | S,F | protein | HumDiv or HumVar [7,070 neutral and 5,322 deleterious variants] | http://genetics.bwh.harvard.edu/pph2 |
-| FATHMM | 2013 | Hidden Markov Models  | SEQ | nsSNP | F | protein | HGMD [disease-causing variants] and UniProt [putatively neutral variants] | http://fathmm.biocompute.org.uk |
+| FATHMM | 2013 | Hidden Markov Models  | SEQ | nsSNP | F | protein | HGMD [49,532 disease-causing variants] and UniProt [36,928 putatively neutral variants] | http://fathmm.biocompute.org.uk |
 | VEST | 2013 | RandomForest  | SEQ | nsSNP | F | protein | HGMD Professional (v2012.2) [47,724 missense variants] and Exome Sequencing Project (ESP6500 accessed 07/2012) [45,818 likely neutral variants] | http://www.cravat.us/CRAVAT |
 | FATHMM-cancer | 2013 | Hidden Markov Models  | SEQ | nsSNP | F | protein | CanProVar [12,720 positives] and UniProt [36,928 negatives] | http://fathmm.biocompute.org.uk/cancer.html |
 | Meta-SNP | 2013 | RandomForest  | ENS | nsSNP | P | protein | SwissVar (SV-2009) [35,766 nsSNVs (17,883 disease variants) from 8,667 proteins] | http://snps.biofold.org/meta-snp |
 | PON-P | 2012 | RandomForest  | ENS | nsSNP | P | protein | PhenCode (2009) + IDbases + 16 individual locus-specific databases (LSDB) [14,610 pathogenic variants (manual curation, SwissVar/LSDB disease annotations)] and dbSNP (Build 131) [17,393 neutral variants] | https://www.ncbi.nlm.nih.gov/pubmed/22505138 |
-| KinMut | 2012 | Support Vector Machine | SEQ | nsSNP | P | protein | Swiss-Prot (neutral and disease kinase mutations) | http://kinmut.bioinfo.cnio.es |
-| MutationAssessor | 2011 | Functional Impact Scoring | SEQ,STR | nsSNP | F | protein | UniProt for MSA[4] | http://mutationassessor.org/r3 |
-| MutPred | 2009 | RandomForest  | SEQ | nsSNP | S,F | protein | HGMD [disease-causing variants] and Swiss-Prot + dbSNP [putatively neutral variants] | http://mutpred1.mutdb.org/ |
+| KinMut | 2012 | Support Vector Machine | SEQ | nsSNP | P | protein | Swiss-Prot [865 disease and 2,627 neutral kinase mutations] | http://kinmut.bioinfo.cnio.es |
+| MutationAssessor | 2011 | Functional Impact Scoring | SEQ,STR | nsSNP | F | protein | UniProt for MSA[4] [10,000 variants subject to MSA] | http://mutationassessor.org/r3 |
+| MutPred | 2009 | RandomForest  | SEQ | nsSNP | S,F | protein | HGMD [34,336 disease-causing variants] and Swiss-Prot + dbSNP [23,426 putatively neutral variants] | http://mutpred1.mutdb.org/ |
 | PoPMuSiC-2.0 | 2009 | Energy Function | SEQ,STR,KB | nsSNP | S | protein | ProTherm [2,648 different point mutations in 131 proteins] | http://babylone.ulb.ac.be/popmusic |
 | iMutant3 | 2008 | Support Vector Machine | SEQ|STR | nsSNP | S,F | protein | ProTherm [6,398 mutations in 55 proteins] | http://gpcr2.biocomp.unibo.it/cgi/predictors/I-Mutant3.0/I-Mutant3.0.cgi |
 | SNAP | 2007 | Neural Networks (FF1) | SEQ | nsSNP | F | protein | Swiss-Prot + PMD [40,830 neutral and 39,987 deleterious variants] | https://hub.docker.com/r/bromberglab/snap |
@@ -34,7 +34,7 @@ Last updated: 02/11/20 [#45]
 | SIFT | 2001 | PSSM based Probabilities | SEQ | nsSNP | D | protein | Swiss-Prot for MSA[4] | https://sift.bii.a-star.edu.sg |
 | PoPMuSiC | 2000 | Energy Function | SEQ,STR,KB | nsSNP | S | protein | Set of 141 high-resolution (􏰹2.5 Å) protein X-ray structures (< 􏰺25% sequence identity) | http://babylone.ulb.ac.be/popmusic |
 | IDSV | 2019 | RandomForest  | SEQ | sSNP | D | protein | dbDSM (ClinVar, PubMed, Web of Knowledge variants as disease-causing) [300 disease-related variants] and VariSNP [300 neutral varians] | http://bioinfo.ahu.edu.cn:8080/IDSV |
-| ARVIN | 2018 | RandomForest  | SEQ,NET | SNV | P | regulatory | HGMD [disease-causing variants] and 1000 Genomes Project [common variants] | https://github.com/gaolong/arvin |
+| ARVIN | 2018 | RandomForest  | SEQ,NET | SNV | P | regulatory | HGMD [233 disease-causing variants] and 1000 Genomes Project [2330 common variants] | https://github.com/gaolong/arvin |
 | LINSIGHT | 2017 | Linear + Probabilistic Model  | SEQ | SNV | P | regulatory | High-coverage genome sequences for 54 unrelated individuals from the "69 Genome" data set from Complete Genomics | http://compgen.cshl.edu/~yihuang/LINSIGHT |
 | DDIG-SN | 2017 | Support Vector Machine | SEQ | sSNP | P | protein | HGMD Professional (v2015.3) [592 disease-causing variants] and 1000 Genomes Project [10,925 putatively benign variants] in 318 genes | https://sparks-lab.org/server/ddig |
 | regSNPs-splicing | 2017 | RandomForest  | SEQ | sSNP | F,SP | protein | HGMD [1,373 disease-causing synonymous SNVs (sSNVs)] and 1000 Genomes Project [7,231 neutral (in internal exon) variants, 329 (on consensus splice site) variants] | http://regsnps-splicing.ccbb.iupui.edu |
@@ -45,7 +45,7 @@ Last updated: 02/11/20 [#45]
 | FATHMM-MKL | 2015 | Multiple Kernel Learning | SEQ,KB | SNV | F | protein + regulatory | HGMD [17,362 coding; 3063 non-coding] and 1000 Genomes Project [4853 coding; 5252 non-coding] | http://fathmm.biocompute.org.uk/fathmmMKL.htm |
 | CADD | 2014 | Support Vector Machine | SEQ | SNV/Indel | D | protein + regulatory | observed (14,893,290 SNVs, 627,071 insertions and 1,107,414 deletions) and simulated variants | https://cadd.gs.washington.edu |
 | MutationTaster2 | 2014 | Naïve Bayes Classifier | SEQ,KB | SNV/Indel | P | protein + regulatory | HGMD Professional + ClinVar [>100,000 disease-associated mutations] and 1000 Genomes Project [>6,000,000 single base exchanges and short indels] | http://www.mutationtaster.org |
-| MutationTaster | 2010 | Naïve Bayes Classifier | SEQ,KB | SNV/Indel | P | protein | HGMD + OMIM + literature [disease-causing variants] and dbSNP + HapMap [putatively neutral variants] | http://www.mutationtaster.org |
+| MutationTaster | 2010 | Naïve Bayes Classifier | SEQ,KB | SNV/Indel | P | protein | HGMD + OMIM + literature [57,100 disease-causing variants] and dbSNP + HapMap [523,425 putatively neutral variants] | http://www.mutationtaster.org |
 | PROVEAN | 2012 | Delta Alignments Scoring | SEQ | SNVs/Indels | F | protein + regulatory | NCBInr for MSA[4] | http://provean.jcvi.org/index.php |
 | SIFT Indel | 2012 | Decision Tree | SEQ,KB | Indel | D | protein | HGMD (2010.2) [1,292 disease indels] 1000 Genomes Project [2,602 neutral indels] | https://sift.bii.a-star.edu.sg/www/SIFT_indels2.html |
 
