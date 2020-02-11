@@ -53,7 +53,7 @@ Last updated: 02/11/20 [#45]
 - [1] FF: Feed-Forward
 - [2] GD: Grantham Difference
 - [3] DMS: Deep Mutational Scanning
-- [4] MSA: Multipe Sequence Alignment
+- [4] MSA: Multiple Sequence Alignment
 
 ### Datasources:
 - HGMD: Human Gene Mutation Database (http://www.hgmd.cf.ac.uk/)
